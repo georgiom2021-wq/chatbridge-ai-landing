@@ -4,23 +4,21 @@ import Meta from "../components/Meta";
 export default function ConnectPage() {
   return (
     <>
-      {/* ✅ SEO + OG мета */}
       <Meta
-        title="Connect Bridge | ChatBridge AI"
-        description="Create your ChatBridge AI link and instantly connect with friends across languages in Telegram."
+        title="Создать мост | ChatBridge AI"
+        description="Создайте ссылку для подключения в Telegram и начните общение без языковых барьеров."
       />
 
-      {/* ✅ Контент страницы */}
       <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 p-6">
         <section className="max-w-lg w-full">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold mb-2">🌉 Connect Your Bridge</h1>
+            <h1 className="text-3xl font-bold mb-2">🌉 Создайте ваш мост</h1>
             <p className="text-gray-600 text-sm">
-              Enter your friend’s ChatBridge ID and generate a secure Telegram link to start chatting instantly.
+              Введите ID друга, и мы сгенерируем ссылку для подключения в Telegram.
             </p>
           </div>
 
-          {/* Сам компонент BridgeCreator */}
+          {/* Компонент генератора deeplink */}
           <BridgeCreator />
         </section>
       </main>
