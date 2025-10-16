@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center space-x-6 text-gray-500">
           <Link href="/pricing" className="hover:text-blue-600">Цены</Link>
           <Link href="/contact" className="hover:text-blue-600">Контакты</Link>
-          <Link href="/bridge" className="hover:text-blue-600">Создать мост</Link>
+          <Link href="/connect" className="hover:text-blue-600">Создать мост</Link>
         </div>
       </motion.div>
     </div>
