@@ -1,15 +1,12 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  environment = { NODE_VERSION = "18" }
 
-# Отключаем кэширование между билдами
-[build.environment]
-  NETLIFY_USE_YARN_CACHE = "false"
-  NPM_FLAGS = "--force"
-  NEXT_TELEMETRY_DISABLED = "1"
+  [build.environment]
+    NODE_VERSION = "18"
+    NETLIFY_USE_YARN_CACHE = "false"
+    NEXT_TELEMETRY_DISABLED = "1"
 
-# Поддержка Next.js маршрутов
 [[redirects]]
   from = "/*"
   to = "/index.html"
